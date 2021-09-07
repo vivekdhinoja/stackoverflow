@@ -18,7 +18,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="99">
+          <list size="101">
             <item index="0" class="java.lang.String" itemvalue="django-rest-framework-simplejwt" />
             <item index="1" class="java.lang.String" itemvalue="django-qrcode" />
             <item index="2" class="java.lang.String" itemvalue="mysqlclient" />
@@ -118,6 +118,8 @@
             <item index="96" class="java.lang.String" itemvalue="knpay-plugin" />
             <item index="97" class="java.lang.String" itemvalue="django-phonenumber-field" />
             <item index="98" class="java.lang.String" itemvalue="django-admin-rangefilter" />
+            <item index="99" class="java.lang.String" itemvalue="django-ckeditor-6.1.0" />
+            <item index="100" class="java.lang.String" itemvalue="django-taggit-1.5.1" />
           </list>
         </value>
       </option>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Question Detail{% endblock %}
+
+{% block content %}
+  {% for question in object_list %}
+    <h1>{{ question.title }}</h1>
+    {{ question.description|safe }}
+  {% endfor %}
+{% endblock %}

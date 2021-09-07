@@ -71,11 +71,17 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "ckeditor",
+    'ckeditor_uploader',
+    "taggit",
 ]
 
 LOCAL_APPS = [
     "stackoverflow.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "stackoverflow.question.apps.QuestionConfig",
+    "stackoverflow.answer.apps.AnswerConfig",
+
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -271,3 +277,20 @@ SOCIALACCOUNT_ADAPTER = "stackoverflow.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# CKEditor Config
+CKEDITOR_RESTRICT_BY_USER = True
+CKEDITOR_RESTRICT_BY_DATE = True
+CKEDITOR_ALLOW_NONIMAGE_FILES = False
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'advanced',
+        'height': 500,
+        'width': 1000,
+    }
+}
+
+TAGGIT_CASE_INSENSITIVE = True
